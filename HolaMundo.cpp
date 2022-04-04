@@ -59,7 +59,17 @@ int main(){
         break;
 
       case 4:
-        cout<<numMenu+1;
+        int libras, chelines, peniques;
+        float monedaActual;
+        cout<<"Ingrese la cantidad de libras:";
+        cin>>libras;
+        cout<<"Ingrese la cantidad de chelines:";
+        cin>>chelines;
+        cout<<"Ingrese la cantidad de peniques:";
+        cin>>peniques;
+        monedaActual = conversionMonedas(libras, chelines, peniques);
+        cout<<"libras: "<<libras<<"\nchelines: "<<chelines<<"\npeniques: "<<peniques;
+        cout<<"\nEl valor en el sistema actual es: "<<monedaActual<<" gbp";
         break;
 
       case 5:
@@ -97,4 +107,10 @@ float conversionAltura(int pies, int pulgadas)
 {
   float alturaMetros = (pies/3.281) + (pulgadas/39.37);
   return alturaMetros;
+}
+
+float conversionMonedas(int libras, int chelines, int peniques)
+{
+  float dineroActual = libras + (chelines/20) + (peniques/240);
+  return dineroActual;
 }
