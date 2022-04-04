@@ -7,7 +7,7 @@ using namespace std;
 //Prototipo de función
 //Para medio decir qué es lo que ocupa una función 
 float tensionCuerda(float masa1, float masa2);
-
+void eficienciaGasolina (float galon, float millas, float&, float&);
 
 int main(){
   int numMenu;
@@ -27,11 +27,19 @@ int main(){
         cin>>masa2;
         tensionTotal = tensionCuerda(masa1, masa2);
         cout<<"La tension total de la cuerda es de: "<<tensionTotal;
-        //tensionCuerda;
         break;
     
       case 2:
-        cout<<numMenu+1;
+        float galon, millas, eficienciaGM, eficienciaLK;
+        cout<<"Ingrese el numero de galones utilizados:";
+        cin>>galon;
+        cout<<"Ingrese el numero de millas recorridas:";
+        cin>>millas;
+        eficienciaGM = 0;
+        eficienciaLK = 0;
+        eficienciaGasolina(galon, millas, eficienciaGM, eficienciaLK);
+        cout<<"La eficiencia del carro es: "<< eficienciaGM <<"mi/gal" ;
+        cout<<"equivalente a "<< eficienciaLK<<" l/km";
         break;
       
       case 3:
@@ -64,3 +72,11 @@ float tensionCuerda(float masa1, float masa2)
   return tension; 
 }
 
+void eficienciaGasolina(float galon, float millas, float& eficienciaGM, float& eficienciaLK)
+{
+  float kilometros, litros;
+  kilometros = millas*1,609;
+  litros= galon*3,785;
+  eficienciaGM = galon/millas;
+  eficienciaLK = litros/kilometros;
+}
