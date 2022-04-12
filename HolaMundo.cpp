@@ -9,7 +9,9 @@ using namespace std;
 float tensionCuerda(float masa1, float masa2);
 void eficienciaGasolina (float galon, float millas, float&, float&);
 float conversionAltura(int pies, int pulgadas);
-float conversionMonedas(int libras, int chelines, int peniques);
+double conversionMonedas(double libras, double chelines, double peniques);
+float myRandom();
+
 
 int main(){
   int numMenu;
@@ -59,8 +61,7 @@ int main(){
         break;
 
       case 4:
-        int libras, chelines, peniques;
-        float monedaActual;
+        double libras, chelines, peniques, monedaActual;
         cout<<"Ingrese la cantidad de libras:";
         cin>>libras;
         cout<<"Ingrese la cantidad de chelines:";
@@ -73,11 +74,17 @@ int main(){
         break;
 
       case 5:
-        cout<<numMenu+1;
+        int n, m;
+        cout<<"Ingrese dos numeros:\n";
+        cin>>n>>m;
+
         break;
 
       case 6:
-        cout<<numMenu+1;
+        int cantidad;
+        cout<<"Ingrese la cantidad de numeros primos que quiere encontrar";
+        cin>>cantidad;
+
         break;
       default:
         break;
@@ -109,8 +116,14 @@ float conversionAltura(int pies, int pulgadas)
   return alturaMetros;
 }
 
-float conversionMonedas(int libras, int chelines, int peniques)
+double conversionMonedas(double libras, double chelines, double peniques)
 {
-  float dineroActual = libras + (chelines/20) + (peniques/240);
+  double dineroActual = libras + (chelines/20) + (peniques/240);
   return dineroActual;
+}
+
+float myRandom()
+{
+  /*srand(time(0));
+  return static_cast <float> (rand()) / static_cast <float> (RAND_MAX);*/
 }
