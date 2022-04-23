@@ -1,0 +1,17 @@
+Las **redes de fibra óptica** se emplean cada vez más en telecomunicación,
+debido a que las ondas de luz tienen una frecuencia alta y la capacidad de una
+señal para transportar información aumenta con la frecuencia.
+
+En las redes de comunicaciones por fibra óptica se emplean sistemas de emisión
+láser. Aunque en los primeros tiempos de la fibra óptica se utilizaron también
+emisores LED, en la actualidad están prácticamente en desuso.
+
+## Tabla de contenidos
+
+  * 1 Aplicaciones
+  * 2 Nuevos requerimientos técnicos y económicos
+    * 2.1 Aumento de la capacidad de transmisión
+    * 2.2 Aumento de la seguridad
+    * 2.3 Reducción de costes
+  * 3 Véase también
+  * 4 Enlaces externos
