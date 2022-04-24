@@ -10,7 +10,7 @@ emisores LED, en la actualidad están prácticamente en desuso.
 
   * 1 Aplicaciones
   * 2 Nuevos requerimientos técnicos y económicos
-    * 2.1 Aumento de la capacidad de transmisión
+    * 2.1 Aumento de la capacidad de transmisión  
     * 2.2 Aumento de la seguridad
     * 2.3 Reducción de costes
   * 3 Véase también
