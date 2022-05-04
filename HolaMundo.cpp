@@ -1,4 +1,4 @@
-/*ALexander Sánchez Zamora
+}/*ALexander Sánchez Zamora
 Práctica semana 1 de programación II
 */
 #include <iostream>
