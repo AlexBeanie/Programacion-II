@@ -1,4 +1,4 @@
-#include "StringUtils.h"
+#include "TareaProgramada1/include/Tarea1/StringUtils.h"
 
 std::wstring stringUtils::convertToWide(std::string string) {
   return std::wstring_convert<std::codecvt_utf8<wchar_t>>().from_bytes(string);
